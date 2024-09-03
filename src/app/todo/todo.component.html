@@ -1,0 +1,11 @@
+<input type="text" [(ngModel)]="txtValue"> 
+<button (click)="onAdd()">Add</button>
+
+<div class="list-container">
+    <ul>
+        <li *ngFor="let item of todoList" >
+            {{item.value}}
+            <button (click)="remove(item)" >X</button>
+        </li>
+    </ul>
+</div>
